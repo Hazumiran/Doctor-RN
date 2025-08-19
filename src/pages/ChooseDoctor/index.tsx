@@ -7,12 +7,12 @@ const ChooseDoctor = () => {
   return (
     <View>
       <Header title='Pilih Dokter' type='dark'/>
-      <ListDoctor profile={DummyDoctor1} name='Dr. M. Farhan' desc='Spesialis Anak'/>
-      <ListDoctor profile={DummyDoctor1} name='Dr. M. Farhan' desc='Spesialis Anak'/>
-      <ListDoctor profile={DummyDoctor1} name='Dr. M. Farhan' desc='Spesialis Anak'/>
-      <ListDoctor profile={DummyDoctor1} name='Dr. M. Farhan' desc='Spesialis Anak'/>
-      <ListDoctor profile={DummyDoctor1} name='Dr. M. Farhan' desc='Spesialis Anak'/>
-      <ListDoctor profile={DummyDoctor1} name='Dr. M. Farhan' desc='Spesialis Anak'/>
+      <ListDoctor type="next" profile={DummyDoctor1} name='Dr. M. Farhan' desc='Spesialis Anak'/>
+      <ListDoctor type="next" profile={DummyDoctor1} name='Dr. M. Farhan' desc='Spesialis Anak'/>
+      <ListDoctor type="next" profile={DummyDoctor1} name='Dr. M. Farhan' desc='Spesialis Anak'/>
+      <ListDoctor type="next" profile={DummyDoctor1} name='Dr. M. Farhan' desc='Spesialis Anak'/>
+      <ListDoctor type="next" profile={DummyDoctor1} name='Dr. M. Farhan' desc='Spesialis Anak'/>
+      <ListDoctor type="next" profile={DummyDoctor1} name='Dr. M. Farhan' desc='Spesialis Anak'/>
     </View>
   )
 }
