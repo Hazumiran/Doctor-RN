@@ -8,6 +8,7 @@ import Messages from "./Messages";
 import Hospitals from "./Hospitals";
 import ListDoctor from "../components/molecules/ListDoctor";
 import ChooseDoctor from "./ChooseDoctor";
+import Chatting from "./Chatting";
 
 export { 
     Splash,
@@ -19,5 +20,6 @@ export {
     Messages,
     Hospitals,
     ListDoctor,
-    ChooseDoctor
+    ChooseDoctor,
+    Chatting
 }

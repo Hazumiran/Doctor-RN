@@ -1,18 +1,26 @@
-import { Image, StyleSheet, Text, View } from 'react-native'
+import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
 import { fonts, theme } from '../../../utils'
 import { IconNext } from '../../../assets'
 
-const ListDoctor = ({profile, name, desc, type}:any) => {
+interface DoctorProps {  
+  profile: string;
+  name: string;
+  desc: string;
+  type: string;
+  onPress?: () => void;
+}
+
+const ListDoctor = ({profile, name, desc, type, onPress}:any) => {
   return (
-    <View style={styles.container}>
+    <TouchableOpacity style={styles.container} onPress={onPress}>
       <Image source={profile} style={styles.avatar}/>
       <View style={{flex: 1}}>
         <Text style={styles.name}>{name}</Text>
         <Text style={styles.desc}>{desc}</Text>
       </View>
       {type === 'next' && <IconNext />}
-    </View>
+    </TouchableOpacity>
   )
 }
 
